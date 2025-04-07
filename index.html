@@ -10,7 +10,19 @@
   <h1>Sergio Sneakers</h1>
   <p>Tu tienda online de zapatillas favoritas. Explora nuestras ofertas en Nike y Adidas.</p>
 
-  <!-- Aquí se insertará el chatbot de Watson Assistant -->
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "6126374f-fa6c-4b86-a71a-02f6488dad02", // The ID of this integration.
+      region: "eu-de", // The region your integration is hosted in.
+      serviceInstanceID: "772365de-07d4-4a62-8702-a3c5937727c0", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
 
 </body>
 </html>
