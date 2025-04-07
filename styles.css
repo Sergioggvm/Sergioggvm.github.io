@@ -1,0 +1,36 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .navbar-brand span {
+    color: #e50914;
+    font-weight: bold;
+  }
+  
+  main h1 {
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  .custom-header {
+    background-color: #0f0f0f;
+  }
+  
+  .contenido-principal {
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+  }
+
+  .posicion-superior-izquierda {
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    padding: 2rem;
+  }
+  

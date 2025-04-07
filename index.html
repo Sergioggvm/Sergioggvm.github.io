@@ -4,25 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sergio Sneakers</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bg-dark text-white">
 
-  <h1>Sergio Sneakers</h1>
-  <p>Tu tienda online de zapatillas favoritas. Explora nuestras ofertas en Nike y Adidas.</p>
+  <header class="navbar navbar-expand-lg navbar-dark custom-header px-4 py-3">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="logo.png" alt="Logo" width="80" height="60" class="me-2">
+      <span class="fs-4">Sergio Sneakers</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ofertas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="contenido-principal ">
+    <div class="container text-dark py-5 bg-white rounded shadow w-25 posicion-superior-izquierda">
+      <h1>Sergio Sneakers</h1>
+      <p>Tu tienda online de zapatillas favoritas. Explora nuestras ofertas en Nike y Adidas.</p>
+    </div>
+  </main>
+  
+
+  <footer class="custom-header text-center text-danger py-4">
+    <div class="container">
+      <p>© 2025 Sergio Sneakers - Todos los derechos reservados</p>
+      <p>
+        <a href="#" class="text-danger me-3">Política de privacidad</a>
+        <a href="#" class="text-danger">Términos de servicio</a>
+      </p>
+      <p>
+        Síguenos en:
+        <a href="#" class="text-danger ms-2">Instagram</a>
+        <a href="#" class="text-danger ms-2">Twitter</a>
+        <a href="#" class="text-danger ms-2">Facebook</a>
+      </p>
+      <p>
+        Encuntranos en:
+        <a href="https://maps.app.goo.gl/Xnsnm1JmcsWETaZv9" 
+        class="text-danger ms-2" 
+        target="_blank" 
+        rel="noopener noreferrer">C. de Fray Luis de León, 14, 47002 Valladolid</a>
+      </p>
+    </div>
+  </footer>
 
   <script>
     window.watsonAssistantChatOptions = {
-      integrationID: "6126374f-fa6c-4b86-a71a-02f6488dad02", // The ID of this integration.
-      region: "eu-de", // The region your integration is hosted in.
-      serviceInstanceID: "772365de-07d4-4a62-8702-a3c5937727c0", // The ID of your service instance.
+      integrationID: "6126374f-fa6c-4b86-a71a-02f6488dad02",
+      region: "eu-de",
+      serviceInstanceID: "772365de-07d4-4a62-8702-a3c5937727c0",
       onLoad: async (instance) => { await instance.render(); }
     };
-    setTimeout(function(){
-      const t=document.createElement('script');
-      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    setTimeout(function() {
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
       document.head.appendChild(t);
     });
   </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
