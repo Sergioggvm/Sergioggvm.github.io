@@ -29,7 +29,7 @@ body {
 
   .posicion-superior-izquierda {
     position: absolute;
-    top: 100px;
+    top: 110px;
     left: 70px;
     padding: 2rem;
   }
