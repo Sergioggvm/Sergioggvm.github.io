@@ -1,36 +1,69 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .navbar-brand span {
-    color: #e50914;
-    font-weight: bold;
-  }
-  
-  main h1 {
-    font-weight: bold;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
+/* Fuente general */
+body, html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
 
-  .custom-header {
-    background-color: #0f0f0f;
-  }
-  
-  .contenido-principal {
-    background-image: url('fondo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 500px;
-  }
+/* Navbar */
+.custom-header {
+  background-color: #0f0f0f;
+}
 
-  .posicion-superior-izquierda {
-    position: absolute;
-    top: 110px;
-    left: 70px;
-    padding: 2rem;
-  }
-  
+.navbar-brand span {
+  color: #e50914;
+  font-weight: bold;
+}
+
+/* Main */
+main {
+  flex: 1;
+}
+
+main h1 {
+  font-weight: bold;
+}
+
+/* Fondo con imagen */
+.fondo-con-imagen {
+  position: relative;
+  background-image: url('fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 5rem 2rem;
+  min-height: calc(100vh - 160px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+/* Texto en esquina usando porcentajes */
+.posicion-superior-izquierda {
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  max-width: 30%;
+}
+
+.posicion-superior-izquierda-descripcion {
+  position: absolute;
+  top: 22%;
+  left: 1%;
+  max-width: 30%;
+}
+
+/* Footer */
+footer a:hover {
+  text-decoration: underline;
+}
+
+.texto-mas-arriba {
+  margin-top: 0;
+  padding-top: 1%;
+}
